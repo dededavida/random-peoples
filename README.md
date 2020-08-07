@@ -172,7 +172,7 @@ State seriam variaveis utilizadas dentro de um componente que podem ser `(altera
 
 # Ciclo de vida
 
-Ciclo de vida seria fases que um componente tem, assim como uma pessoal, ela nasce, cresce e morre, com componente seria da mesma forma, mas utilizariamos outras expressões, como, montado, atualizado e desmotado. Seguindo esses conceitos podemos disparar ações seguindo a nossa regra de negocio de acordo com a `fase` de um componente.
+Ciclo de vida seria fases que um componente tem, assim como uma pessoal, ela nasce, cresce e morre, com componente seria da mesma forma, mas utilizariamos outras expressões, como, montado, atualizado e desmotado.Seguindo esses conceitos podemos executar determinado código em momentos particulares do processo. 
 
 ![Component](/.github/ciclo_vida.png)
 
