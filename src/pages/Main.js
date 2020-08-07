@@ -29,7 +29,6 @@ export default function Main({ navigation }) {
       <TouchableHighlight
         onPress={() => navigation.navigate("Detail", { item })}
         underlayColor="#ccc"
-        key={item.login.uukid}
       >
         <View style={styles.containerInfo}>
           <Image source={{ uri: item.picture.large }} style={styles.img} />
@@ -48,7 +47,7 @@ export default function Main({ navigation }) {
       <FlatList
         data={peoples}
         renderItem={renderItem}
-        keyExtractor={(item) => item.login.uukid}
+        keyExtractor={(item) => item.login.uuid}
       />
     </View>
   );
