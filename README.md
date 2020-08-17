@@ -18,24 +18,59 @@
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
+- [Choco](https://www.javascript.com/)
 - [Expo](https://expo.io/)
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
 - [React Native](https://reactnative.dev/)
 - [JavaScript](https://www.javascript.com/)
 
+
 # 🖥️ Pré-requisitos
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: `Node.js`, `Yarn`, `Expo` e `VSCode`
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: `Choco`, `Node.js`, `Yarn`, `Expo` e `VSCode`
 
 # 🛠️ Instalando ferramentas
+
+# Choco
+Vá ao botão iniciar no canto inferior do windows e clique com botão direito e WindowsPowerShell(Admin).
+<img src=".github/Capturar.PNG">
+
+Digite o seguinte comando:
+```bash
+Get-ExecutionPolicy
+```
+Caso o retorno seja diferente de "Restricted" pode pular o passo.
+<img src=".github/powershell.PNG">
+ Caso seja, restrito, digite a seguinte linha
+
+```bash
+Set-ExecutionPolicy AllSigned
+```
+
+agora vamos instalar o choco, só copiar e colar.
+````bash
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+````
+<img src=".github/installChoco.PNG">
+
+`Nesse passo pode ser necessário a reinicialização do terminal`
+
+## Instalando Yarn, Node 
+
+Se você deseja pular etapas, instale tudo de uma vez, caso prefira instalar indvidualmente vá para o p´roximo passo.
+Para instalar tudo com um código, digite:
+
+```bash
+choco install -y nodejs-lts yarn  
+```
 
 ## Yarn
 
 Acesse como administrador o power shell do windows e execute o seguinte comando:
 
 ```bash
-npm install -g yarn
+choco install -g yarn
 ```
 
 Será feita a isntalação de forma global.
