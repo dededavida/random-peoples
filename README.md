@@ -42,7 +42,7 @@ Get-ExecutionPolicy
 ```
 Caso o retorno seja diferente de "Restricted" pode pular o passo.
 <img src=".github/powershell.PNG">
- Caso seja, restrito, digite a seguinte linha
+Caso seja, restrito, digite a seguinte linha
 
 ```bash
 Set-ExecutionPolicy AllSigned
@@ -64,7 +64,14 @@ Para instalar tudo com um código, digite:
 ```bash
 choco install -y nodejs-lts yarn  
 ```
+Digite separadamente cada um:
+```bash
+node -v
+npm -v
+yarn -v
+```
 
+Se retornar versões, quer dizer que foi instalado com sucesso.
 ## Yarn
 
 Acesse como administrador o power shell do windows e execute o seguinte comando:
