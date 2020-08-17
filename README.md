@@ -58,7 +58,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ## Instalando Yarn, Node 
 
-Se você deseja pular etapas, instale tudo de uma vez, caso prefira instalar indvidualmente vá para o p´roximo passo.
+Se você deseja pular etapas, instale tudo de uma vez, caso prefira instalar indvidualmente vá para o próximo passo.
 Para instalar tudo com um código, digite:
 
 ```bash
