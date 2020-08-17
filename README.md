@@ -18,55 +18,71 @@
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
+- [Choco](https://chocolatey.org)
 - [Expo](https://expo.io/)
 - [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
 - [React Native](https://reactnative.dev/)
 - [JavaScript](https://www.javascript.com/)
 
 # 🖥️ Pré-requisitos
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: `Node.js`, `Yarn`, `Expo` e `VSCode`
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: `Choco`, `Node.js`, `Yarn`, `Expo` e `VSCode`
 
 # 🛠️ Instalando ferramentas
 
-## Yarn
+# 🍫 Choco
 
-Acesse como administrador o power shell do windows e execute o seguinte comando:
+Vá ao botão iniciar no canto inferior do windows e clique com botão direito, será aberto a tela abaixo, clique WindowsPowerShell e(Admin)
 
-```bash
-npm install -g yarn
-```
-
-Será feita a isntalação de forma global.
-
-Verifique a versão
+<img src=".github/Capturar.PNG">
 
 ```bash
-yarn -v
+# Digite o seguinte comando:
+$ Get-ExecutionPolicy
 ```
 
-## Node.js
+`Caso o retorno seja diferente de "Restricted" pode pular o próximo passo`
 
-Acesse o cmd e digte:
+<img src=".github/powershell.PNG">
+
+`Caso seja, restrito, digite a seguinte linha`
 
 ```bash
-yarn install nodejs-lts
+$ Set-ExecutionPolicy AllSigned
 ```
 
-`Versão lts é mais estável de bugs e erros do que a current (recente)`
+Agora vamos instalar o Choco
 
-No terminal digite uma das opções abaixo:
+````bash
+$ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+````
+<img src=".github/installChoco.PNG">
+
+`Nesse passo e recomendavel fechar e abrir o terminal para subir as alterações`
+
+## 📌 Yarn
 
 ```bash
-node -v ou npm -v
+$ choco install -g yarn
+# Será feita a instalação de forma global.
+
+# Verifique a versão
+$ yarn -v
 ```
 
-Sera retornado a versão instalada em sua maquina, caso não aparece, é porque não foi instalado.
+## ⌨ Node.js
 
-## VSCode
+```bash
+# Versão lts é mais estável de bugs e erros do que a current (recente)
+$ yarn install nodejs-lts
 
-Acesse [Visual Code](https://code.visualstudio.com/Download), faça o download e instale conforme seu sistema.
+# Verifique a versão
+$ node -v ou npm -v
+```
+
+## 🧱 VSCode
+
+Acesse [Visual Code](https://code.visualstudio.com/Download), faça o download e instale conforme seu sistema
 
 #### Extensões VSCode
 
@@ -96,18 +112,10 @@ Clique na opção install (em verde):
 
 <img src=".github/instalar.png">
 
-## Expo
-
-Pode ser feita a instalação do expo de duas formas:
+## 💡 Expo
 
 ```bash
 yarn global add expo-cli
-```
-
-ou
-
-```bash
-npm install -g expo-cli
 ```
 
 # 😎 Criando o Projeto
@@ -145,8 +153,7 @@ Será aberta uma aba no seu navegador padrão, conforme imagem abaixo.
 
 <img src=".github/localhost.png">
 
-Agora e preciso executar o projeto no seu celular, para isso, acesse a Playstore ou AppStore e baixE o aplicativo `Expo`, ao abrir o aplicativo, clique em `Scan QR Code` e escaneie o QR da tela que foi aberta em seu navegador.
-Aguarde até que aparece uma tela igual a essa:
+Agora e preciso executar o projeto no seu celular, para isso, acesse a Playstore ou AppStore e baixe o aplicativo `Expo`, ao abrir o aplicativo, clique em `Scan QR Code` e escaneie o QR da tela que foi aberta em seu navegador. Aguarde até que aparece uma tela igual a essa:
 
 <img src=".github/app.png" height="500">
 
@@ -158,7 +165,7 @@ Até aqui, já configuramos todo o ambiente necessario para iniciamos o desenvol
 
 React e um ferramenta criada pelo facebook, seu intuito e facilitar o desenvolvimento de aplicacões web ( React JS) e mobile (React Native), utiliza como linguagem de desenvolvimento javascript.
 
-No treinamento iremos focar exclusivamente no desenvolvimento de aplicações mobile, através do React Native, com el e possivel criar aplicações hibridas que funcionam tanto no Android como no iOs somente com único código javascript.
+No treinamento iremos focar exclusivamente no desenvolvimento de aplicações mobile, através do React Native, com ele e possivel criar aplicações hibridas que funcionam tanto no Android como no iOs somente com único código javascript.
 
 E umas das ferramentas utilizadas por grandes empresas, como Uber, Netflix, WhatsApp.
 
