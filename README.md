@@ -18,7 +18,7 @@
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Choco](https://www.javascript.com/)
+- [Choco](https://chocolatey.org)
 - [Expo](https://expo.io/)
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
