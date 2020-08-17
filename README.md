@@ -34,7 +34,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 Vá ao botão iniciar no canto inferior do windows e clique com botão direito, será aberto a tela abaixo, clique WindowsPowerShell e(Admin)
 
-<img src=".github/Capturar.PNG">
+![Capturar](/.github/Capturar.png)
 
 ```bash
 # Digite o seguinte comando:
@@ -43,7 +43,7 @@ $ Get-ExecutionPolicy
 
 `Caso o retorno seja diferente de "Restricted" pode pular o próximo passo`
 
-<img src=".github/powershell.PNG">
+![powershell](/.github/powershell.png)
 
 `Caso seja, restrito, digite a seguinte linha`
 
@@ -56,7 +56,7 @@ Agora vamos instalar o Choco
 ````bash
 $ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ````
-<img src=".github/installChoco.PNG">
+![Choco](/.github/installChoco.png)
 
 `Nesse passo e recomendavel fechar e abrir o terminal para subir as alterações`
 
